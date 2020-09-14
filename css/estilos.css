@@ -1,0 +1,754 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mena Grotesk', sans-serif;
+    background-color: #F5F1EC;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/');
+    src: url('../fonts/?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-Black.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-Black.woff') format('woff'),
+        url('../fonts/MenaGrotesk-Black.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-Black.svg#MenaGrotesk-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-BlackItalic.eot');
+    src: url('../fonts/MenaGrotesk-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-BlackItalic.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-BlackItalic.woff') format('woff'),
+        url('../fonts/MenaGrotesk-BlackItalic.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-BlackItalic.svg#MenaGrotesk-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-BoldItalic.eot');
+    src: url('../fonts/MenaGrotesk-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-BoldItalic.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-BoldItalic.woff') format('woff'),
+        url('../fonts/MenaGrotesk-BoldItalic.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-BoldItalic.svg#MenaGrotesk-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-Book.eot');
+    src: url('../fonts/MenaGrotesk-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-Book.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-Book.woff') format('woff'),
+        url('../fonts/MenaGrotesk-Book.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-Book.svg#MenaGrotesk-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-Bold.eot');
+    src: url('../fonts/MenaGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-Bold.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-Bold.woff') format('woff'),
+        url('../fonts/MenaGrotesk-Bold.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-Bold.svg#MenaGrotesk-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-BookItalic.eot');
+    src: url('../fonts/MenaGrotesk-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-BookItalic.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-BookItalic.woff') format('woff'),
+        url('../fonts/MenaGrotesk-BookItalic.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-BookItalic.svg#MenaGrotesk-BookItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-LightItalic.eot');
+    src: url('../fonts/MenaGrotesk-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-LightItalic.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-LightItalic.woff') format('woff'),
+        url('../fonts/MenaGrotesk-LightItalic.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-LightItalic.svg#MenaGrotesk-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-Light.eot');
+    src: url('../fonts/MenaGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-Light.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-Light.woff') format('woff'),
+        url('../fonts/MenaGrotesk-Light.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-Light.svg#MenaGrotesk-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-Medium.eot');
+    src: url('../fonts/MenaGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-Medium.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-Medium.woff') format('woff'),
+        url('../fonts/MenaGrotesk-Medium.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-Medium.svg#MenaGrotesk-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-Regular.eot');
+    src: url('../fonts/MenaGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-Regular.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-Regular.woff') format('woff'),
+        url('../fonts/MenaGrotesk-Regular.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-Regular.svg#MenaGrotesk-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-MediumItalic.eot');
+    src: url('../fonts/MenaGrotesk-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-MediumItalic.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-MediumItalic.woff') format('woff'),
+        url('../fonts/MenaGrotesk-MediumItalic.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-MediumItalic.svg#MenaGrotesk-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-RegularItalic.eot');
+    src: url('../fonts/MenaGrotesk-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-RegularItalic.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-RegularItalic.woff') format('woff'),
+        url('../fonts/MenaGrotesk-RegularItalic.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-RegularItalic.svg#MenaGrotesk-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-SemiBold.eot');
+    src: url('../fonts/MenaGrotesk-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-SemiBold.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-SemiBold.woff') format('woff'),
+        url('../fonts/MenaGrotesk-SemiBold.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-SemiBold.svg#MenaGrotesk-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-SemiBoldItalic.eot');
+    src: url('../fonts/MenaGrotesk-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-SemiBoldItalic.woff') format('woff'),
+        url('../fonts/MenaGrotesk-SemiBoldItalic.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-SemiBoldItalic.svg#MenaGrotesk-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-UltraBoldItalic.eot');
+    src: url('../fonts/MenaGrotesk-UltraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-UltraBoldItalic.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-UltraBoldItalic.woff') format('woff'),
+        url('../fonts/MenaGrotesk-UltraBoldItalic.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-UltraBoldItalic.svg#MenaGrotesk-UltraBoldItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-UltraBold.eot');
+    src: url('../fonts/MenaGrotesk-UltraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-UltraBold.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-UltraBold.woff') format('woff'),
+        url('../fonts/MenaGrotesk-UltraBold.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-UltraBold.svg#MenaGrotesk-UltraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-ThinItalic.eot');
+    src: url('../fonts/MenaGrotesk-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-ThinItalic.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-ThinItalic.woff') format('woff'),
+        url('../fonts/MenaGrotesk-ThinItalic.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-ThinItalic.svg#MenaGrotesk-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('../fonts/MenaGrotesk-Thin.eot');
+    src: url('../fonts/MenaGrotesk-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MenaGrotesk-Thin.woff2') format('woff2'),
+        url('../fonts/MenaGrotesk-Thin.woff') format('woff'),
+        url('../fonts/MenaGrotesk-Thin.ttf') format('truetype'),
+        url('../fonts/MenaGrotesk-Thin.svg#MenaGrotesk-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('..fonts/MenaGrotesk-UltraLight.eot');
+    src: url('..fonts/MenaGrotesk-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('..fonts/MenaGrotesk-UltraLight.woff2') format('woff2'),
+        url('..fonts/MenaGrotesk-UltraLight.woff') format('woff'),
+        url('..fonts/MenaGrotesk-UltraLight.ttf') format('truetype'),
+        url('..fonts/MenaGrotesk-UltraLight.svg#MenaGrotesk-UltraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mena Grotesk';
+    src: url('..fonts/MenaGrotesk-UltraLightItalic.eot');
+    src: url('..fonts/MenaGrotesk-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('..fonts/MenaGrotesk-UltraLightItalic.woff2') format('woff2'),
+        url('..fonts/MenaGrotesk-UltraLightItalic.woff') format('woff'),
+        url('..fonts/MenaGrotesk-UltraLightItalic.ttf') format('truetype'),
+        url('..fonts/MenaGrotesk-UltraLightItalic.svg#MenaGrotesk-UltraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+section.cont-general {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 10vw;
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 70px;
+    filter: grayscale(5%) contrast(140%);
+    transition: all 0.5s;
+}
+
+header:hover {
+    filter: grayscale(5%) contrast(150%);
+}
+
+header h1 {
+    color: #F5F1EC;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+nav {
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    padding: 37.5px 10vw;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #F5F1EC;
+    opacity: 0.9;
+    box-shadow: 0 0 10px #000 ;
+}
+
+nav .logo {
+    height: 20px;
+    float: left;
+}
+
+nav input {
+    display: none;
+    z-index: -100;
+}
+
+nav .resto-nav {
+    width: 70%;
+}
+
+.menu {
+    float: right;
+    line-height: 30px;
+}
+
+.menu a {
+    color: #000;;
+    text-decoration: none;
+    padding: 0;
+    padding-left: 10px;
+    transition: 0.4s;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+}
+
+.menu a:hover {
+    text-decoration: line-through;
+    text-decoration-color: #F5F1EC;
+}
+
+.mostrar-menu-btn,
+.esconder-menu-btn {
+    transition: 0.4s;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    color: #000;;
+}
+
+.esconder-menu-btn {
+    color: #F5F1EC;
+}
+
+i.fas.fa-times {
+    margin-right: 5vw;
+}
+
+.mostrar-menu-btn {
+    float: right;
+}
+
+
+.mostrar-menu-btn i {
+    line-height: 40px;
+}
+
+.mostrar-menu-btn:hover,
+.esconder-menu-btn:hover {
+    color: #325FE4;
+}
+
+#chk {
+    position: absolute;
+    z-index: -100;
+    background-color: #043264;
+    border-radius: 50%;
+}
+
+section.contenedor {
+    width: 100%;
+    padding: 50px 5vw;
+    padding-top: 0;
+}
+
+div.proyectos {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.proyecto {
+    width: 45%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+div.img-proyecto1 {
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    -webkit-filter: grayscale(70%) contrast(140%);
+    filter: grayscale(70%) contrast(140%);
+    transition: all 0.5s;
+}
+
+div.img-proyecto1:hover {
+    filter: grayscale(10%) contrast(130%);
+}
+
+div.img-proyecto2 {
+    background-image: url(../img/2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    -webkit-filter: grayscale(70%) contrast(150%);
+    filter: grayscale(70%) contrast(150%);
+    transition: all 0.5s;
+}
+
+div.img-proyecto2:hover {
+    filter: grayscale(5%) contrast(130%);
+}
+
+div.img-proyecto3 {
+    background-image: url(../img/3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    -webkit-filter: grayscale(70%) contrast(140%);
+    filter: grayscale(70%) contrast(140%);
+    transition: all 0.5s;
+}
+
+div.img-proyecto3:hover {
+    filter: grayscale(5%) contrast(130%);
+}
+
+div.img-proyecto4 {
+    background-image: url(../img/4.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    -webkit-filter: grayscale(70%) contrast(140%);
+    filter: grayscale(70%) contrast(140%);
+    transition: all 0.5s;
+}
+
+div.img-proyecto4:hover {
+    filter: grayscale(5%) contrast(130%);
+}
+
+div.img-proyecto5 {
+    background-image: url(../img/5.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    -webkit-filter: grayscale(80%) contrast(140%);
+    filter: grayscale(80%) contrast(140%);
+    transition: all 0.5s;
+}
+
+div.img-proyecto5:hover {
+    filter: grayscale(5%) contrast(130%);
+}
+
+div.img-proyecto6 {
+    background-image: url(../img/6.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    -webkit-filter: grayscale(70%) contrast(140%);
+    filter: grayscale(70%) contrast(140%);
+    transition: all 0.5s;
+}
+
+div.img-proyecto6:hover {
+    filter: grayscale(5%) contrast(130%);
+}
+
+
+div.proyecto-largue {
+    width: 95%;
+    height: 500px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+div.img-proyecto7 {
+    background-image: url(../img/7.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    -webkit-filter: grayscale(80%) contrast(140%);
+    filter: grayscale(80%) contrast(140%);
+    transition: all 0.5s;
+}
+
+div.img-proyecto7:hover {
+    filter: grayscale(5%) contrast(130%);
+}
+
+div.proyecto .titulo-proyecto {
+    line-height: 600px;
+    color: #F5F1EC;
+    z-index: 11;
+    text-shadow: 1px 1px 10px #000;;
+}
+
+div.proyecto-largue .titulo-proyecto {
+    line-height: 500px;
+    color: #fff;
+    z-index: 11;
+    text-shadow: 1px 1px 10px #000;
+}
+
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 50px 10vw;
+    padding-bottom: 5vw;
+}
+
+.footer-left {
+    width: 50%;
+    float: left;
+}
+
+.footer-right {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.footer-right i {
+    font-size: 20px;
+    color: #000;;
+    transition: color 0.5s;
+}
+
+.footer-right i:hover {
+    color: #F5F1EC;
+    text-shadow: 1px 1px 1px #000;;
+}
+
+.footer-right a {
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    /* Responsive Nav */
+
+    .mostrar-menu-btn,
+    .esconder-menu-btn {
+        display: block;
+        float: right;
+    }
+
+    nav {
+        padding: 25px 10vw;
+        height: 80px;
+        z-index: 1000;
+    }
+
+    nav .logo {
+        height: 30px;
+    }
+
+    .menu {
+        position: fixed;
+        width: auto;
+        height: auto;
+        background: #000;;
+        right: -100%;
+        top: 0;
+        text-align: left;
+        padding: 80px 10vw;
+        padding-bottom: 30px;
+        line-height: normal;
+        transition: 0.5s;
+        font-size: 25px;
+        z-index: 100000;
+        border-bottom-left-radius: 10px;
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px;
+        padding-right: 0;
+        color: #fff;
+        text-align: right;
+        font-size: 15px;
+    }
+
+    .menu a:hover,
+    .mostrar-menu-btn:hover,
+    .esconder-menu-btn:hover {
+        color: #28293D;
+    }
+
+
+    .esconder-menu-btn {
+        position: absolute;
+        line-height: 100px;
+        top: 0;
+        right: 7vw;
+    }
+
+    #chk:checked~.menu {
+        right: 0;
+    }
+}
+
+@media (min-width: 0) and (max-width: 700px) {
+    header {
+        height: auto;
+    }
+
+    div.proyectos {
+        display: block;
+    }
+
+    div.proyecto {
+        width: 100%;
+    }
+
+    footer {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+    .proyecto {
+        height: 400px;
+    }
+
+    div.proyecto .titulo-proyecto {
+        line-height: 400px;
+    }
+
+
+}
+
+@media (min-width: 1501px) and (max-width: 2560px) {
+
+    nav {
+        box-shadow: none;
+    }
+
+    header {
+        border-radius: 10px;
+    }
+
+    .proyecto {
+        height: 700px;
+    }
+
+    div.proyecto .titulo-proyecto {
+        line-height: 700px;
+    }
+}
+
+main.contacto {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    filter: grayscale(70%) contrast(130%);
+}
+
+h2.contacto {
+    color: #F5F1EC;
+    margin: 10vw;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+p.parrafo-contacto {
+    color: #F5F1EC;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    text-align: justify;
+}
+
+div.redes {
+    width: 100%;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    text-align: left;
+    margin-top: 50px;
+}
+
+main.contacto a.red {
+    text-decoration: none;
+    color: #F5F1EC;
+}
+
+main.contacto i.fab,
+main.contacto i.far {
+    color: #F5F1EC;
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+}
+
+
+
+@media (min-width: 2000px) and (max-width: 2560px) {
+    p.parrafo-contacto {
+        margin-left: 30vw;
+        margin-right: 30vw;
+    }
+}
