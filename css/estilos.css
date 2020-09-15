@@ -285,12 +285,16 @@ header {
     background-position: center;
     background-size: cover;
     margin-bottom: 70px;
-    filter: grayscale(5%) contrast(140%);
+    filter: grayscale(100%) contrast(140%);
+    -webkit-filter: grayscale(100%) contrast(140%);
     transition: all 0.5s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
 }
 
 header:hover {
-    filter: grayscale(5%) contrast(150%);
+    filter: grayscale(5%) contrast(140%);
+    -webkit-filter: grayscale(5%) contrast(140%);
 }
 
 header h1 {
@@ -310,7 +314,7 @@ nav {
     z-index: 100;
     background-color: #F5F1EC;
     opacity: 0.9;
-    box-shadow: 0 0 10px #000 ;
+    box-shadow: 0 0 10px #000;
 }
 
 nav .logo {
@@ -333,11 +337,13 @@ nav .resto-nav {
 }
 
 .menu a {
-    color: #000;;
+    color: #000;
     text-decoration: none;
     padding: 0;
     padding-left: 10px;
-    transition: 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.4s;
     text-align: center;
     font-size: 10px;
     font-weight: 500;
@@ -353,10 +359,12 @@ nav .resto-nav {
 .mostrar-menu-btn,
 .esconder-menu-btn {
     transition: 0.4s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.4s;
     font-size: 20px;
     cursor: pointer;
     display: none;
-    color: #000;;
+    color: #000;
 }
 
 .esconder-menu-btn {
@@ -415,13 +423,16 @@ div.img-proyecto1 {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    -webkit-filter: grayscale(70%) contrast(140%);
-    filter: grayscale(70%) contrast(140%);
+    filter: grayscale(100%) contrast(150%);
+    -webkit-filter: grayscale(100%) contrast(150%);
     transition: all 0.5s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
 }
 
 div.img-proyecto1:hover {
-    filter: grayscale(10%) contrast(130%);
+    filter: grayscale(60%) contrast(130%);
+    -webkit-filter: grayscale(60%) contrast(130%);
 }
 
 div.img-proyecto2 {
@@ -432,13 +443,16 @@ div.img-proyecto2 {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    -webkit-filter: grayscale(70%) contrast(150%);
-    filter: grayscale(70%) contrast(150%);
+    filter: grayscale(100%) contrast(160%);
+    -webkit-filter: grayscale(100%) contrast(160%);
     transition: all 0.5s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
 }
 
 div.img-proyecto2:hover {
-    filter: grayscale(5%) contrast(130%);
+    filter: grayscale(60%) contrast(130%);
+    -webkit-filter: grayscale(60%) contrast(130%);
 }
 
 div.img-proyecto3 {
@@ -449,13 +463,16 @@ div.img-proyecto3 {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    -webkit-filter: grayscale(70%) contrast(140%);
-    filter: grayscale(70%) contrast(140%);
+    filter: grayscale(100%) contrast(150%);
+    -webkit-filter: grayscale(100%) contrast(150%);
     transition: all 0.5s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
 }
 
 div.img-proyecto3:hover {
-    filter: grayscale(5%) contrast(130%);
+    filter: grayscale(60%) contrast(140%);
+    -webkit-filter: grayscale(60%) contrast(140%);
 }
 
 div.img-proyecto4 {
@@ -466,13 +483,16 @@ div.img-proyecto4 {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    -webkit-filter: grayscale(70%) contrast(140%);
-    filter: grayscale(70%) contrast(140%);
+    filter: grayscale(100%) contrast(150%);
+    -webkit-filter: grayscale(100%) contrast(150%);
     transition: all 0.5s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
 }
 
 div.img-proyecto4:hover {
-    filter: grayscale(5%) contrast(130%);
+    filter: grayscale(50%) contrast(130%);
+    -webkit-filter: grayscale(50%) contrast(130%);
 }
 
 div.img-proyecto5 {
@@ -483,13 +503,16 @@ div.img-proyecto5 {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    -webkit-filter: grayscale(80%) contrast(140%);
-    filter: grayscale(80%) contrast(140%);
+    filter: grayscale(100%) contrast(150%);
+    -webkit-filter: grayscale(100%) contrast(150%);
     transition: all 0.5s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
 }
 
 div.img-proyecto5:hover {
-    filter: grayscale(5%) contrast(130%);
+    filter: grayscale(50%) contrast(130%);
+    -webkit-filter: grayscale(50%) contrast(130%);
 }
 
 div.img-proyecto6 {
@@ -500,13 +523,16 @@ div.img-proyecto6 {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    -webkit-filter: grayscale(70%) contrast(140%);
-    filter: grayscale(70%) contrast(140%);
+    filter: grayscale(100%) contrast(150%);
+    -webkit-filter: grayscale(100%) contrast(150%);
     transition: all 0.5s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
 }
 
 div.img-proyecto6:hover {
-    filter: grayscale(5%) contrast(130%);
+    filter: grayscale(60%) contrast(130%);
+    -webkit-filter: grayscale(60%) contrast(130%);
 }
 
 
@@ -525,20 +551,24 @@ div.img-proyecto7 {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    -webkit-filter: grayscale(80%) contrast(140%);
-    filter: grayscale(80%) contrast(140%);
+    filter: grayscale(100%) contrast(170%);
+    -webkit-filter: grayscale(100%) contrast(170%);
     transition: all 0.5s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
 }
 
 div.img-proyecto7:hover {
-    filter: grayscale(5%) contrast(130%);
+    filter: grayscale(70%) contrast(130%);
+    -webkit-filter: grayscale(70%) contrast(130%);
 }
 
 div.proyecto .titulo-proyecto {
     line-height: 600px;
     color: #F5F1EC;
     z-index: 11;
-    text-shadow: 1px 1px 10px #000;;
+    text-shadow: 1px 1px 10px #000;
+    ;
 }
 
 div.proyecto-largue .titulo-proyecto {
@@ -571,13 +601,15 @@ footer {
 
 .footer-right i {
     font-size: 20px;
-    color: #000;;
+    color: #000;
     transition: color 0.5s;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 0.5s;
 }
 
 .footer-right i:hover {
     color: #F5F1EC;
-    text-shadow: 1px 1px 1px #000;;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .footer-right a {
@@ -608,7 +640,7 @@ footer {
         position: fixed;
         width: auto;
         height: auto;
-        background: #000;;
+        background: #000;
         right: -100%;
         top: 0;
         text-align: left;
@@ -616,6 +648,8 @@ footer {
         padding-bottom: 30px;
         line-height: normal;
         transition: 0.5s;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.5s;
         font-size: 25px;
         z-index: 100000;
         border-bottom-left-radius: 10px;
