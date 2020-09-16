@@ -346,9 +346,9 @@ nav .resto-nav {
     -webkit-transition-duration: 0.4s;
     text-align: center;
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1pt;
+    letter-spacing: 2pt;
 }
 
 .menu a:hover {
@@ -422,7 +422,6 @@ div.img-proyecto1 {
     height: 100%;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
     filter: grayscale(100%) contrast(150%);
     -webkit-filter: grayscale(100%) contrast(150%);
     transition: all 0.5s;
@@ -442,7 +441,6 @@ div.img-proyecto2 {
     height: 100%;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
     filter: grayscale(100%) contrast(160%);
     -webkit-filter: grayscale(100%) contrast(160%);
     transition: all 0.5s;
@@ -462,7 +460,6 @@ div.img-proyecto3 {
     height: 100%;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
     filter: grayscale(100%) contrast(150%);
     -webkit-filter: grayscale(100%) contrast(150%);
     transition: all 0.5s;
@@ -482,7 +479,6 @@ div.img-proyecto4 {
     height: 100%;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
     filter: grayscale(100%) contrast(150%);
     -webkit-filter: grayscale(100%) contrast(150%);
     transition: all 0.5s;
@@ -502,7 +498,6 @@ div.img-proyecto5 {
     height: 100%;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
     filter: grayscale(100%) contrast(150%);
     -webkit-filter: grayscale(100%) contrast(150%);
     transition: all 0.5s;
@@ -522,7 +517,6 @@ div.img-proyecto6 {
     height: 100%;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
     filter: grayscale(100%) contrast(150%);
     -webkit-filter: grayscale(100%) contrast(150%);
     transition: all 0.5s;
@@ -550,7 +544,6 @@ div.img-proyecto7 {
     height: 100%;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
     filter: grayscale(100%) contrast(170%);
     -webkit-filter: grayscale(100%) contrast(170%);
     transition: all 0.5s;
@@ -721,10 +714,6 @@ footer {
 
     nav {
         box-shadow: none;
-    }
-
-    header {
-        border-radius: 10px;
     }
 
     .proyecto {
